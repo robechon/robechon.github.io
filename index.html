@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Robin BECHON</title>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
+
+<head>
+    <title>Robin BECHON</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex-column">
+    <header>
+        <nav class="flex-row">
+            <div class="logo-container flex-column">
+                <img id="logo" src="assets/img/logo_large.png">
+            </div>
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="menu flex-column">
+                <ul class="flex-row">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="title flex-column">
+            <h1>Hello, i'm Robin !</h1>
+            <div class="subtitles flex-row">
+                <p>Web Development</p>
+                <p>Quality Assurance</p>
+                <p>DevOps</p>
+            </div>
+        </div>
+    </header>
+    <main class="flex-row">
+        <div class="description flex-column">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </main>
+    <footer class="flex-column">
+        <div class="social-networks flex-row">
+            <a href="https://www.fiverr.com/rbechon" onmouseover="hideImg('fiverr-mark')"
+                onmouseout="revealImg('fiverr-mark')">
+                <img id="fiverr-mark" src="assets/img/fiverr-mark.png">
+            </a>
+            <a href="https://www.linkedin.com/in/robin-bechon-5b9679120" onmouseover="hideImg('linkedin-mark')"
+                onmouseout="revealImg('linkedin-mark')">
+                <img id="linkedin-mark" src="assets/img/linkedin-mark.png">
+            </a>
+            <a href="https://github.com/robechon" onmouseover="hideImg('github-mark')"
+                onmouseout="revealImg('github-mark')">
+                <img id="github-mark" src="assets/img/github-mark.png">
+            </a>
+        </div>
+        <p>
+            Robin BECHON © 2020
+        </p>
+    </footer>
+</body>
+<script type="text/javascript" src="js/updateClass.js"></script>
 </html>

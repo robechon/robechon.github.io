@@ -1,0 +1,196 @@
+
+@media screen and (min-width: 601px) {
+    .description p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo-container {
+        flex: 100%;
+    }
+    .description p {
+        font-size: 15px;
+    }
+
+    .menu {
+        flex: 100%;
+    }
+
+    .subtitles {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+html, body {
+    height: 99%;
+}
+
+body {
+    background-color: rgb(255, 245, 215);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E"), linear-gradient(rgb(224, 200, 127), rgb(255, 245, 215));
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Alegreya', serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    text-align: center;
+    animation: fadeIn ease 5s;
+    margin: 10px;
+    color: rgb(18, 1, 35);
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.title p {
+    margin: 0 0 20px 0;
+}
+
+.title p:hover {
+    transition: 0.3s;
+    color: transparent
+}
+
+.subtitles p {
+    animation: fadeIn ease 7s;
+    margin: 0 10px;
+}
+
+nav {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divider {
+    flex-grow: 1;
+}
+
+.menu {
+    justify-content: center;
+}
+
+.logo-container {
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    animation: fadeIn ease 2s;
+    margin: 15px;
+    width: 80px;
+    height: 35px;
+}
+
+nav ul {
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    animation: fadeIn ease 2s;
+    font-weight: 500;
+    font-size: 16px;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+    transition-delay: 0.2s;
+    color: rgb(18, 1, 35);
+    padding: 0 25px;
+}
+
+nav a {
+    border-bottom: 1px solid rgb(18, 1, 35);
+}
+
+nav li:hover {
+    font-size: 20px;
+}
+
+nav a {
+    color: rgb(18, 1, 35);
+    text-decoration: none;
+}
+
+main {
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+.description {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p {
+    animation: fadeIn ease 10s;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    max-width: 600px;
+    line-height: 1.8;
+    color: rgb(18, 1, 35)
+}
+
+footer {
+    animation: fadeIn ease 15s;
+    flex: 0 0 auto;
+    font-family: 'Lato', sans-serif;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.social-networks {
+    flex-grow: 2;
+    justify-content: center;
+}
+
+.social-networks a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-networks img {
+    width: 40px;
+    filter: grayscale(80%);
+}
+
+#sunObject {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #feb300;
+    bottom: 1%;
+    left: 10%;
+    animation: fadeIn ease 5s;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+    transition-delay: 0.2s;
+}
