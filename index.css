@@ -180,17 +180,3 @@ footer p {
     width: 40px;
     filter: grayscale(80%);
 }
-
-#sunObject {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #feb300;
-    bottom: 1%;
-    left: 10%;
-    animation: fadeIn ease 5s;
-    transition-property: font-size;
-    transition-duration: 1.5s;
-    transition-delay: 0.2s;
-}
